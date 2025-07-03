@@ -13,7 +13,7 @@ const playerSchema = new mongoose.Schema({
   userId: Number,
   username: String,
   data: Object,
-  timestamp: { type: Date, default: Date.now },
+  timestamp: { type: Date, default: Date.now }
 });
 
 const PlayerData = mongoose.models.PlayerData || mongoose.model("PlayerData", playerSchema);
@@ -24,6 +24,7 @@ export default async function handler(req, res) {
   }
 
   const { userId, username, data } = req.body;
+
   if (!userId || !username || !data) {
     return res.status(400).json({ error: "Ontbrekende velden" });
   }
