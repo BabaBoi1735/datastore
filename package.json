@@ -4,19 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "vercel dev",
+    "start": "vercel dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
-    "@coreui/coreui": "^5.4.1",
-    "@coreui/react": "^5.7.0",
-    "dotenv": "^17.0.1",
-    "express": "^5.1.0",
-    "heroku": "^8.7.1",
     "mongoose": "^8.16.1"
   }
 }
